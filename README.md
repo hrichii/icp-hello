@@ -19,6 +19,8 @@ $ xcode-select --install
 
 ## 2. miseのインストール
 nodeやrustのインストールをする前に、ツールやランタイムの管理ツール`mise`をインストールします。
+`pyenv`や`nodenv`のように言語毎にバージョンを管理するツールを使い分けることもできますが、`mise`ならそれだけで複数の言語やツールのバージョンを管理できるためおすすめです。
+
 - [miseとは](https://mise.jdx.dev/about.html)
 - [mise ではじめる開発環境構築](https://zenn.dev/takamura/articles/dev-started-with-mise)
 ```sh
