@@ -99,7 +99,7 @@ $ dfx --version
 dfx 0.24.3
 ```
 
-# 6 開発者アイデンティティの作成
+## 7. 開発者アイデンティティの作成
 デプロイされると、ストレージやコンピューティングリソースが消費され、費用が発生します。
 費用を払うために、開発者IDを作成する必要があります。以下コマンドでIDを作成します。
 ```sh
@@ -109,7 +109,7 @@ $ dfx identity get-principal
 xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxx
 ```
 
-# 7. プロジェクトの作成
+## 8. プロジェクトの作成
 helloという名前でプロジェクトを作成します。
 今回は、BackendはRust、FrontendはSvelteKitを選択しました。
 ```sh
@@ -132,7 +132,7 @@ $ dfx new hello
   None
 ```
 
-# 8. LocalCanisterの起動
+## 9. LocalCanisterの起動
 まずはローカルPC上で動作を確認するために、LocalCansterの環境を起動します。
 以下のdfx startコマンドでを実行します。以下のコマンドであれば`Control+C`で止められますが、
 --backgroundオプションを付与するとバックグラウンドで実行されるため、別途止めるためのコマンドが必要です。
@@ -141,7 +141,7 @@ $ cd hello
 $ dfx start
 ```
 
-# 9. Localへのデプロイ
+## 10. Localへのデプロイ
 以下のdfx deployコマンドを実行すると、ビルドが走り、Local Canister実行環境へdeployされます。
 表示されたURLにアクセスすると以下画像のような画面が表示されます。
 
@@ -157,7 +157,7 @@ URLs:
     hello_backend: http://127.0.0.1:4943/?canisterId=xxxxxx-cai&id=xxxxxx
 ```
 
-# 10. Playgroundへのデプロイ
+## 11. Playgroundへのデプロイ
 先ほどのコマンドに--playgroundを付与するだけでPlaygroundへデプロイが可能です。
 Playgroundは費用が発生せず20分だけしか起動しないため、動作確認目的で使用すると良いでしょう。
 以下が実行例です。
